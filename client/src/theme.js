@@ -36,7 +36,7 @@ export const shades = {
   },
 };
 
-export const theme = {
+export const theme = createTheme({
   palette: {
     primary: {
       main: shades.primary[500],
@@ -71,4 +71,4 @@ export const theme = {
       fontSize: 14,
     },
   },
-};
+});
