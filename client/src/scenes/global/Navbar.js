@@ -35,7 +35,7 @@ const Navbar = () => {
         alignItems="center"
       >
         <Box
-          onCLick={() => navigate("/")}
+          onClick={() => navigate("/")}
           sx={{ "&:hover": { cursor: "pointer" } }}
           color={shades.secondary[500]}
         >
@@ -70,7 +70,7 @@ const Navbar = () => {
             }}
           >
             <IconButton
-              onCLick={() => dispatch(setIsCartOpen({}))}
+              onClick={() => dispatch(setIsCartOpen({}))}
               sx={{ color: "black" }}
             >
               <ShoppingBagOutlined />
