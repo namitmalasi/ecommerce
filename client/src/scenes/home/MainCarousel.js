@@ -11,7 +11,6 @@ const importAll = (r) =>
     acc[item.replace("./", "")] = r(item);
     return acc;
   }, {});
-
 export const heroTextureImports = importAll(
   require.context("../../assets", false, /\.(png|jpe?g|svg)$/)
 );
